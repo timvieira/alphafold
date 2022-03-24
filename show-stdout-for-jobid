@@ -1,0 +1,5 @@
+f=`ack $1 results*/*/jobid.txt --no-color |head -n1`
+echo "$f"
+d=`dirname $f`/cmd-stdout.txt
+echo "$d"
+cat "$d"
